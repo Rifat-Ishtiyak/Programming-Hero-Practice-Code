@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form</title>
+    <style>
+        .form{
+            width: 400px;
+            margin: 0 auto;   
+        }
+        .form h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>Pitah Ghor</h1>
+        <form action="">
+            <p>Name: <input type="text" name="name" id="" placeholder="enter your name"></p>
+            <p>Email: <input type="text" name="" id="" placeholder="enter your email"></p>
+            <fieldset>
+                <legend>Select your pitha</legend>
+                <label for="chitoy">
+                    <input type="radio" name="pitha" id="chitoy" value="chitoy">Chitoy <br>
+                </label>
+                <label for="vapa">
+                    <input type="radio" name="pitha" id="vapa" value="vapa">Vapa <br>
+                </label>
+                <label for="patisapta">
+                    <input type="radio" name="pitha" id="patisapta" value="patisapta">Patisapta <br>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Select your vorta</legend>
+                <label for="sorisha">
+                    <input type="checkbox" name="vorta" id="sorisha">Sorisha
+                </label>
+                <label for="shutki">
+                    <input type="checkbox" name="vorta" id="shutki">Shutki
+                </label>
+                <label for="begun">
+                    <input type="checkbox" name="vorta" id="begun">Begun
+                </label>
+            </fieldset>
+            <p>
+                Special Instruction: <br>
+                <textarea name="instruction" id="" cols="30" rows="10"></textarea>
+            </p>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="reset">
+        </form>
+
+    </div>
+</body>
+</html>
