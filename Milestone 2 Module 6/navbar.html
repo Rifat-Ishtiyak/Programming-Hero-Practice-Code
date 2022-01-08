@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        }
+        nav ul li{
+            list-style: none;
+        }
+
+        nav ul li a{
+            display: inline-block;
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            padding: 15px 40px;
+            margin: 0px 0px;
+        }
+
+        .dropdown{
+            position: absolute;
+            display: none;
+            background-color: rgba(73, 73, 73, 0.9);
+        }
+
+        .nav-hover:hover>ul{
+            display: block;
+            
+        }
+
+        ul li a:hover{
+            color: tomato;
+            background-color: gray;
+        }
+        
+        .text{
+            margin: 50px 0px;
+        }
+        .margin{
+            margin-left: 118px;
+            margin-top: -54px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./audio.html">Media</a></li>
+            <li><a href="./form.html">Form</a></li>
+            <li class="nav-hover"><a href="">nav3</a>
+                <ul class="dropdown">
+                    <li><a href="">nav1</a></li>
+                    <li><a href="">nav2</a></li>
+                    <li class="nav-hover"><a href="">nav3</a>
+                        <ul class="dropdown margin">
+                            <li><a href="">nav1</a></li>
+                            <li><a href="">nav2</a></li>
+                            <li><a href="">nav3</a></li>
+                        </ul>
+                    </li>   
+                    <li><a href="">nav3</a></li>
+                </ul>
+            </li>
+            <li><a href="./table.html">Table</a></li>
+        </ul>
+    </nav>
+    
+    <div class="text">
+        <center>
+            <h1>This is home page</h1>
+        </center>
+    </div>
+</body>
+</html>
