@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.first{
+    background-color: red;
+    color: white;
+    width: 50%;
+    margin: 20px 0px;
+    padding: 50px;
+
+}
+
+.second{
+    background-color: green;
+    color: white;
+    width: 50%;
+    margin: 20px 0px;
+    padding: 50px;
+}
