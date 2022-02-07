@@ -25,3 +25,8 @@ pinkButton.addEventListener('click', function(){
 document.getElementById('make-salmon').addEventListener('click', function(){
     document.body.style.backgroundColor='salmon';
 })
+
+document.getElementById('show-button').addEventListener('click', function(){
+    document.getElementById('show-text').innerText=document.getElementById('text-field').value;
+    document.getElementById('text-field').value=""
+})

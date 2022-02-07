@@ -7,28 +7,39 @@
     <title>JS event</title>
     <style>
         h1{
-            font-size: 50px;
+            font-size: 45px;
         }
-        button{
+        .btn{
             margin: 10px 0px;
             padding: 10px 25px;
             width: 200px;
             font-size: 15px;
+        }
+        span{
+            display: inline-block;
+            margin-top:10px;
+            color: red;
+            font-size: 25px;
         }
     </style>
 </head>
 <body>
     <center>
         <h1>Event niye clickbaji</h1>
-        <button onclick="document.body.style.backgroundColor='Yellow'">Yellow Background</button><br>
-        <button onclick="redBackground()">Red Background</button><br>
-        <button id="make-green">Green Background</button><br>
-        <button id="make-orange">Orange Background</button><br>
-        <button id="make-hotPink">Pink Background</button><br>
-        <button id="make-salmon">salmon Background</button><br>
+        <button class="btn" onclick="document.body.style.backgroundColor='Yellow'">Yellow Background</button><br>
+        <button class="btn" onclick="redBackground()">Red Background</button><br>
+        <button class="btn" id="make-green">Green Background</button><br>
+        <button class="btn" id="make-orange">Orange Background</button><br>
+        <button class="btn" id="make-hotPink">Pink Background</button><br>
+        <button class="btn" id="make-salmon">salmon Background</button><br>
+        <br>
+        <div>
+            <input id="text-field" type="text" placeholder="enter your name"> 
+            <button id="show-button">show</button><br>
+            <span id="show-text"></span>
+        </div>
     </center>
     </center>
-
     <script src="./js/event.js"></script>
 </body>
 </html>
