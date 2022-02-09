@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Counter</title>
+</head>
+<body>
+    <h1 class="text-center mt-4 mb-4">Counter Game</h1>
+
+    <div>
+        <h2 id="display" class="text-center my-4"></h2>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <button onclick="positiveFunction()" class="btn btn-primary w-25 mx-2">+</button>
+        <button onclick="negativeFunction()" class="btn btn-danger w-25">-</button>
+    </div>
+
+
+    <!-- ! Js Code  -->
+    <script>
+        let count=0;
+        document.getElementById('display').innerText=count;
+
+        function positiveFunction(){
+            count+=1;
+            console.log(count);
+            dispaly();
+        }
+
+        function negativeFunction(){
+            if(count<=0){
+                alert('minimum value reached');
+            }
+            else{
+                count-=1;
+                console.log(count);
+                dispaly();
+            }
+        }
+
+        function dispaly(){
+            document.getElementById('display').innerText=count;
+        }
+    </script>
+    <!-- ! Js Code  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
