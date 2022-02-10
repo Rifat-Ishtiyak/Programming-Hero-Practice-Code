@@ -4,6 +4,7 @@ const withdrawButton=document.getElementById('withdraw-btn');
 const balanceField=document.getElementById('balance');
 let balanceAmount=parseFloat(balanceField.innerText);
 
+let count=0;
 depositButton.addEventListener('click', function(){
     const depositField=document.getElementById('deposit-field');
     if (depositField.value=="") {
@@ -21,6 +22,18 @@ depositButton.addEventListener('click', function(){
         depositTotalShow.innerText=totalDeposit;
 
         document.getElementById('deposit-field').value="";
+
+
+        //! ------- table Code-------------
+        const newRow=document.createElement('tr');
+        const tableBody=document.getElementById('table-body');
+        count++;
+        newRow.innerHTML=`<th scope="row">${count}</th>
+                        <td>Withdraw</td>
+                        <td>+${currentDeposit}</td>
+                        <td>${Date().slice(0,24)}</td>`;
+
+        tableBody.appendChild(newRow);
     }
 })
 
@@ -41,6 +54,20 @@ withdrawButton.addEventListener('click', function(){
         withdrawTotalShow.innerText=totalWithdraw;
 
         document.getElementById('withdraw-field').value="";
+
+
+        //! ------- table Code-------------
+        const newRow=document.createElement('tr');
+        const tableBody=document.getElementById('table-body');
+        count++;
+        newRow.innerHTML=`<th scope="row">${count}</th>
+                        <td>Deposit</td>
+                        <td>-${currentWithdraw}</td>
+                        <td>${Date().slice(0,24)}</td>`;
+
+        tableBody.appendChild(newRow);
+
+
     }
 })
 
