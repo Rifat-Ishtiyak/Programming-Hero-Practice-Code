@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+<body>
+    <main class="main-section">
+        <div class="calculator">
+            <table>
+                <tr>
+                    <td><input class="btn c-btn btn-press" type="button" onclick="removeAll()" value="C"></td>
+                    <td colspan="3"><input class="btn" id="input-field" type="text" ></td>
+                </tr>
+                <tr>
+                    <td><input class="btn btn-press" type="button" onclick="getValue('7')" value="7"></td>
+                    <td><input class="btn btn-press" type="button" onclick="getValue('8')" value="8"></td>
+                    <td><input class="btn btn-press" type="button" onclick="getValue('9')" value="9"></td>
+                    <td><input class="btn btn-press" type="button" onclick="getValue('÷')" value="÷"></td>
+                </tr>
+                <tr>
+                    <td><input class="btn btn-press" type="button" onclick="getValue('4')" value="4"></td>
+                    <td><input class="btn btn-press" type="button" onclick="getValue('5')" value="5"></td>
+                    <td><input class="btn btn-press" type="button" onclick="getValue('6')" value="6"></td>
+                    <td><input class="btn btn-press" type="button" onclick="getValue('×')" value="×"></td>
+                </tr>
+                <tr>
+                    <td><input class="btn btn-press" type="button"  onclick="getValue('1')" value="1"></td>
+                    <td><input class="btn btn-press" type="button"  onclick="getValue('2')" value="2"></td>
+                    <td><input class="btn btn-press" type="button"  onclick="getValue('3')" value="3"></td>
+                    <td><input class="btn btn-press" type="button"  onclick="getValue('−')" value="−"></td>
+                </tr>
+                <tr>
+                    <td><input class="btn btn-press" type="button"  onclick="getValue('0')" value="0"></td>
+                    <td><input class="btn btn-press" type="button"  onclick="getValue('.')" value="."></td>
+                    <td><input class="btn btn-press" type="button"  onclick="" value="="></td>
+                    <td><input class="btn btn-press" type="button"  onclick="getValue('+')" value="+"></td>
+                </tr>
+            </table>
+            
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
