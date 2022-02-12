@@ -8,7 +8,7 @@ loginButton.addEventListener('click', function(){
         alert("input cannot be empty");
     }
     else if(email.value=="rifat@gmail.com" && password.value=="1234"){
-        location.href="../bank.html";
+        window.location.href="bank.html";
     }
     else{
         alert("Please enter correct Email and Password !");
