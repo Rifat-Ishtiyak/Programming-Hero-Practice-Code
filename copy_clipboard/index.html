@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="text-input" type="text" name="" id="">
+    <button id="copy-btn">click to copy</button>
+
+    <script>
+        document.getElementById('copy-btn').addEventListener('click', ()=>{
+            const textField = document.getElementById('text-input');
+            
+            navigator.clipboard.writeText(textField.value);
+            textField.value="";
+        })
+    </script>
+</body>
+</html> 
