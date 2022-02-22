@@ -1,0 +1,16 @@
+.country{
+    border: 4px solid green;
+    margin: 10px 10px;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+.country:hover{
+    transform: scale(1.1);
+}
+
+#countries{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
