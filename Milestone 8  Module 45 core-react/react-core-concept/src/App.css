@@ -1,0 +1,25 @@
+.parent-container{
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.container{
+  margin: px 0px;
+  text-align: center;
+  padding: 30px 0px;
+  font-size: 18pt;
+  color: white;
+  background-color: rgb(34, 36, 36);
+  border-radius: 20px;
+}
+
+.container:hover {
+  background-color: orangered;
+  cursor: pointer;
+}
+
+.counter{
+  margin: 20px;
+}
