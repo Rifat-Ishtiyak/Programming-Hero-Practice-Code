@@ -20,6 +20,6 @@
   cursor: pointer;
 }
 
-.counter{
+.counter, .user{
   margin: 20px;
 }
