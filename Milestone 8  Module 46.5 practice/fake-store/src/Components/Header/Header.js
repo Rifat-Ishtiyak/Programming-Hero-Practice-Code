@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div>
       <div className="">
@@ -18,7 +18,7 @@ const Header = () => {
                   Contact
                 </Nav.Link>
                 <Nav.Link href="#" className="mx-4">
-                  Cart <sup>2</sup>{" "}
+                  Cart <sup>{props.count}</sup>{" "}
                 </Nav.Link>
                 <Nav.Link href="#" className="mx-4">
                   Login
