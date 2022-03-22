@@ -1,0 +1,21 @@
+.cart{
+    padding: 10px 25px;
+    position: sticky;
+    top: 0;
+}
+.cart h2{
+    text-align: center;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 27px;
+}
+
+.cart-details p,h3{
+    margin: 20px 0px;
+}
+
+.cart-details h3{
+    font-weight: 500;
+    font-size: 22px;
+}
