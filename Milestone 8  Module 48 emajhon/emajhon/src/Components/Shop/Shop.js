@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { storeData } from "../../Utilities/LocalStorage";
 import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
 import "./Shop.css";
@@ -14,8 +15,10 @@ const Shop = () => {
   }, []);
 
   const addToCart = (product) => {
+    console.log(product);
     const newCart = [...cartItems, product];
     setCartItems(newCart);
+    storeData(product.id);
   };
 
   // console.log("after add : ", cartItems);
@@ -28,6 +31,7 @@ const Shop = () => {
             product={product}
             key={product.id}
             addToCart={addToCart}
+            isProduct
           ></Product>
         ))}
       </div>
