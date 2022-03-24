@@ -17,7 +17,18 @@ const storeData = (productID) => {
   }
 
   localStorage.setItem("fake-cart", JSON.stringify(localCart));
-  console.log(productID);
 };
 
-export { storeData };
+const getData = () => {
+  let localCart = {};
+
+  const storedCart = localStorage.getItem("fake-cart");
+  if (storedCart) {
+    localCart = JSON.parse(storedCart);
+  } else {
+    localCart = {};
+  }
+  return localCart;
+};
+
+export { storeData, getData };
